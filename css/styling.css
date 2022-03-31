@@ -1,0 +1,244 @@
+@font-face {
+    font-family: biorhyme;
+    src: url(../assets/fonts/BioRhyme/BioRhyme-Regular.ttf);
+}
+
+@font-face {
+    font-family: space-mono-bold;
+    src: url(../assets/fonts/Space_Mono/SpaceMono-Bold.ttf);
+}
+
+* {
+    margin: 0; 
+    padding: 0;
+    font-family: biorhyme;
+    color: black
+} 
+
+body{
+    background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url(../assets/images/oxno_vert.JPG);
+    /*background-image: url(../assets/images/oxno_vert.JPG);*/
+    background-size:cover;
+}
+
+ul {
+    list-style-type: none;
+}
+#logo{
+    padding-top: 10px;
+    height: auto;
+    width: 25vw;
+}
+
+/*.full-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.9);
+    justify-content: space-evenly;
+    align-items: center;
+}*/
+
+.full-header{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2);
+    /*background-color: rgba(255, 255, 255, 0.9);*/
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navigation-menu{
+    grid-column: 1;
+    /*border-style: solid;*/
+    border-radius: 20px;
+    border-color: rgb(117, 135, 159);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    margin: 10px;
+}
+
+.menu-icon{
+    display: none;
+
+}
+
+h1{
+    grid-column: 3/5;
+    justify-self: center
+}
+
+.search-bar{ /*en tamaños de pantalla intermedios se me superpone con el logo*/
+    grid-column: 6;
+}
+
+.shop-icon{
+    grid-column: 6;
+    grid-row: 2;
+    justify-self: flex-end;
+    margin-right: 10px;
+}
+
+#index-background{
+    border-radius: 20px;
+    height: 20%;
+    width: 97%;
+    margin: 0.5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-style: solid;
+    padding: 0.5%;
+    border-color: rgb(117, 135, 159);
+}
+
+.intro{
+    font-size: x-large;
+    height: 70vh;
+}
+ 
+.intro p{
+    color: rgb(97, 82, 61);
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+    top: 35%;
+}
+
+a {
+    color: rgb(0, 0, 1);
+    font-weight: bold;
+    font-family: space-mono-bold;
+    text-decoration: none;
+}
+a:link {
+    color: rgb(0, 0, 1);
+    font-weight: bold;
+    text-decoration: none;
+}
+a:active {
+    color: rgb(117, 135, 159);
+    font-weight: bold;
+    text-decoration: none;
+}
+a:visited {
+    color: rgb(0, 0, 1);
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(117, 135, 159);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.full-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#whatsapp{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+
+.nosotros-background{
+    display: grid;
+    grid-template-columns: 1fr, 3fr;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url(../assets/images/www_blanco.png) no-repeat;
+    background-color: white;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 20px;
+    border: solid;
+    padding: 8px;
+    margin: 10px;
+    border-color: rgb(117, 135, 159);
+}
+
+#background-icon{
+    grid-column: 1;
+}
+
+#background-text{
+    grid-column: 2;
+    align-self: center;
+}
+
+.FAQS-background{
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 20px;
+    border: solid;
+    padding: 8px;
+    margin: 10px;
+    border-color: rgb(117, 135, 159);
+    background-color: rgba(255, 255, 255, 0.9);
+    
+}
+
+h2{
+    font-size: xx-large;
+    font-family: space-mono-bold;
+    text-align: center;
+    border-radius: 20px;
+    border: solid;
+    border-color: rgb(117, 135, 159);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 8px;
+    margin: 10px;
+}
+#contact{
+    padding: 15px;
+}
+
+.contact-form{
+    height: 50%;
+    border-radius: 20px;
+    border: solid;
+    border-color: rgb(117, 135, 159);
+    padding: 8px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.flex-container-products{
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-direction:column;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+    align-items: flex-start;
+    align-content:space-around;
+    justify-content: center;
+  }
+  
+  .flex-item-product{
+    background-color: rgba(128,128,128, 1);
+    flex-direction: row;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    margin: 15px;
+    flex-direction: row;
+  }
+  
+.flex-item-product img{ 
+    justify-items: center;
+    height: 40vh;
+    width: auto;
+}
+
+h3{
+    background-color: white;
+}
+h5{
+    background-color: white;
+}

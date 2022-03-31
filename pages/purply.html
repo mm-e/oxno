@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/images/oxno_gris.png" type="image/x-icon">
+    <title>OXNO</title>
+    <link rel="stylesheet" href="../css/styling.css">
+    <script src="https://kit.fontawesome.com/6280a3f78b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/mediaqueries.css">
+</head>
+<body>
+    <header class="full-header">
+        <nav>
+            <ul class="navigation-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./faq.html">Preguntas Frecuentes</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        </nav>
+            <h1><a href="../index.html"><img id="logo" src="../assets/images/oxno_logo.png" alt="Home"></a></h1>
+        <nav class="search-bar">
+            <form action="" method="post" enctype="">
+                <p>
+                <input type="text" name="cliente" placeholder="¿Qué buscás?" required>
+                <input type="submit" value="Buscar">
+                </p>
+            </form>
+        </nav>
+        <div class="shop-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Purply</h2>
+                <table cellpadding="5" cellspacing="5" style="border: none;">
+                    <tr>
+                        <td>
+                            <p><img src="../assets/images/purply_gris M hombre.png" alt="Purply" width="200" height="230"></p>
+                        </td>
+                        <td>
+                            <table cellpadding="5" cellspacing="20" style="border: none;">
+                                <tr>
+                                    <th>Detalles</th>
+                                    <th>Color Sugerido para este diseño</th>
+                                    <th>Cuidados</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Remera manga corta y cuello redondo.</p>
+                                        <p>100% algodón</p>
+                                    </td>
+                                    <td>
+                                        <p>Gris</p>
+                                        <p>Blanco</p>
+                                    </td>
+                                    <td>
+                                        <ol>
+                                            <li>Usar</li>
+                                            <li>Lavar del reves en agua fría</li>
+                                            <li>No estrujar</li>
+                                            <li>Secar extendida y a resguardo de luz solar directa</li>
+                                            <li>Repetir desde 1</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <table cellpadding="5" cellspacing="10" style border="none">
+                            <tr>
+                                <td>
+                                    <p><img src="../assets/images/purply_gris M hombre.png" alt="Purply" width="50"</p>
+                                </td>
+                                <td>
+                                    <p><img src="../assets/images/purply_gris M hombre.png" alt="Purply" width="50"</p>
+                                </td>
+                                <td>
+                                    <p><img src="../assets/images/purply_gris M hombre.png" alt="Purply" width="50"</p>
+                                </td>
+                    </tr>
+                </table>
+                <br>
+                <form action="enviar.php" method="post" enctype="">
+                    <p>
+                        <label for="color"> Color: </label>
+                        <select name="color" id="">
+                            <option value="rojo">Rojo</option>
+                            <option value="blanco">Blanco</option>
+                            <option value="negro">Negro</option>
+                            <option value="gris">Gris</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="cantidad"> Cantidad: </label>
+                        <select name="cantidad" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </p>
+                    <br>
+                    <p>
+                        <input type="comprar" value="Agregar al carrito">
+                    </p>
+                </form>
+            </article>
+        </section>
+    </main>
+    <br>
+    <a href="#"><img id="whatsapp" src="../assets/icon/whatsapp.png" alt="WhatsApp"></a>
+    <footer class="full-footer">
+        <h6>Copyright - OXNO 2022 </h6>
+        <a href="#"><img id="instagram" src="../assets/icon/instagram.png" alt="Instagram" height="20vh"></a>
+        <h6>Todos los derechos reservados</h6>
+    </footer>
+</body>
+</html>
