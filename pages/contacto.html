@@ -8,7 +8,9 @@
     <title>OXNO</title>
     <link rel="stylesheet" href="../css/styling.css">
     <script src="https://kit.fontawesome.com/6280a3f78b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/mediaqueries.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--<link rel="stylesheet" href="../css/mediaqueries.css">-->
 </head>
 <body>
     <header class="full-header">
@@ -45,7 +47,8 @@
             </article>
         </section>
         <br>
-    <fieldset class="contact-form">
+    <section class="contact-container">
+        <fieldset class="contact-form">
         <!--<legend>Escribinos</legend>-->
         <form action="enviar.php" method="post" enctype="">
         <p>
@@ -57,7 +60,7 @@
         <input type="email" name="email" placeholder="Ingresá tu email" required>
         </p>
         <h4>Mensaje:</h4>
-        <textarea name=mensaje" id="mensaje" cols="30" rows="10"></textarea>
+        <textarea name=mensaje" id="mensaje" cols="50" rows="7"></textarea>
         <p>
             <label for="edad"> Edad: </label>
             <select name="Edad" id="edad">
@@ -77,6 +80,7 @@
         </p>
     </form>
 </fieldset>
+    </section>
     </main>
     <br>
     <a href="#"><img id="whatsapp" src="../assets/icon/whatsapp.png" alt="WhatsApp"></a>
