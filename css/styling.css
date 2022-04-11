@@ -24,6 +24,8 @@ body{
     background-position: bottom;
 }
 
+
+
 /*HEADER*/
 
 ul {
@@ -61,6 +63,43 @@ ul {
     background-color: rgba(255, 255, 255, 0.7);
     padding: 30px;
     margin: 10px;
+}
+
+.btn{
+    margin-left: 5vw;
+    background-color: rgb(117, 135, 159);
+}
+
+.dropdown-menu {
+   background-color: rgb(117, 135, 159);
+}
+
+
+.dropdown-menu a {
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: space-mono-bold;
+    text-decoration: none;
+}
+.dropdown-menu a:link {
+    color: whitesmoke;
+    font-weight: bold;
+    text-decoration: none;
+}
+.dropdown-menu a:active {
+    color: rgb(82, 169, 135);
+    font-weight: bold;
+    text-decoration: none;
+}
+.dropdown-menu a:visited {
+    color: whitesmoke;
+    font-weight: bold;
+    text-decoration: none;
+}
+.dropdown-menu a:hover {
+    color: rgb(60, 70, 80);
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .menu-icon{
@@ -202,7 +241,8 @@ h2{
     border-radius: 20px;
     /*border: solid;
     border-color: rgb(117, 135, 159);*/
-    background-color: rgba(255, 255, 255, 0.5);
+    /*background-color: rgba(255, 255, 255, 0.5);*/
+    background: linear-gradient(45deg,white, 10%, rgba(117, 135, 159,0.3));
     padding: 8px;
     margin: 10px;
 }
@@ -216,6 +256,7 @@ h2{
 .contact-container{
     display: grid ;
     grid-template-columns: 3 (1fr,2fr,3fr);
+    margin: 2vw;
 }
 
 .contact-form{
@@ -323,9 +364,15 @@ h5{
        grid-row: 1;
        justify-self: center;
     }
-    .navigation-menu{
+    .dropdown{
         display: none;
     }
+
+
+
+    /*.navigation-menu{
+        display: none;
+    }*/
 
     .search-bar{
         display: none;
@@ -341,6 +388,8 @@ h5{
         grid-column: 1;
         grid-row: 2;
     }
+
+
 
     .shop-icon{
         grid-column: 6;
