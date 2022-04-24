@@ -65,9 +65,10 @@ ul {
   background-color: rgb(117, 135, 159);
 }
 
-.dropdown-menu {
-  background-color: rgb(117, 135, 159);
+/*.dropdown-menu {
+ background-color: $oxno-blue;
 }
+
 
 .dropdown-menu a {
   color: whitesmoke;
@@ -75,29 +76,37 @@ ul {
   font-family: space-mono-bold;
   text-decoration: none;
 }
-
 .dropdown-menu a:link {
   color: whitesmoke;
   font-weight: bold;
   text-decoration: none;
 }
-
 .dropdown-menu a:active {
-  color: rgb(82, 169, 135);
+  color: $oxno-green;
   font-weight: bold;
   text-decoration: none;
 }
-
 .dropdown-menu a:visited {
   color: whitesmoke;
   font-weight: bold;
   text-decoration: none;
 }
-
 .dropdown-menu a:hover {
   color: rgb(60, 70, 80);
   font-weight: bold;
   text-decoration: none;
+}*/
+.dropdown-menu {
+  background-color: rgb(117, 135, 159);
+}
+.dropdown-menu a {
+  color: whitesmoke;
+  font-weight: bold;
+  font-family: space-mono-bold;
+  text-decoration: none;
+}
+.dropdown-menu a:hover {
+  color: rgb(60, 70, 80);
 }
 
 h1 {
@@ -248,7 +257,7 @@ h2 {
 
 .contact-container {
   display: grid;
-  grid-template-columns: 3 1fr, 2fr, 3fr;
+  grid-template-columns: 1fr, 2fr, 3fr;
   margin: 2vw;
 }
 

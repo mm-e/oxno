@@ -15,6 +15,8 @@
   color: black;
 } 
 
+@import "colors";
+
 /*BODY*/
 
 body{
@@ -59,7 +61,7 @@ ul {
   grid-column: 1;
   /*border-style: solid;*/
   border-radius: 5px;
-  border-color: rgb(117, 135, 159);
+  border-color: $oxno-blue;
   background-color: rgba(255, 255, 255, 0.7);
   padding: 30px;
   margin: 10px;
@@ -67,11 +69,11 @@ ul {
 
 .btn{
   margin-left: 5vw;
-  background-color: rgb(117, 135, 159);
+  background-color: $oxno-blue;
 }
 
-.dropdown-menu {
- background-color: rgb(117, 135, 159);
+/*.dropdown-menu {
+ background-color: $oxno-blue;
 }
 
 
@@ -87,7 +89,7 @@ ul {
   text-decoration: none;
 }
 .dropdown-menu a:active {
-  color: rgb(82, 169, 135);
+  color: $oxno-green;
   font-weight: bold;
   text-decoration: none;
 }
@@ -100,6 +102,18 @@ ul {
   color: rgb(60, 70, 80);
   font-weight: bold;
   text-decoration: none;
+}*/
+.dropdown-menu {
+  background-color: $oxno-blue;
+  a {
+      color: whitesmoke;
+      font-weight: bold;
+      font-family: space-mono-bold;
+      text-decoration: none;
+      &:hover{
+          color: rgb(60, 70, 80);
+      }
+  }
 }
 
 h1{
@@ -121,7 +135,7 @@ h1{
   margin-bottom: 3%;
   border-style: solid;
   padding: 0.5%;
-  border-color: rgb(117, 135, 159);
+  border-color: $oxno-blue;
 }
 
 /*.intro{
@@ -149,7 +163,7 @@ a:link {
   text-decoration: none;
 }
 a:active {
-  color: rgb(117, 135, 159);
+  color: $oxno-blue;
   font-weight: bold;
   text-decoration: none;
 }
@@ -159,7 +173,7 @@ a:visited {
   text-decoration: none;
 }
 a:hover {
-  color: rgb(117, 135, 159);
+  color: $oxno-blue;
   font-weight: bold;
   text-decoration: underline;
 }
@@ -221,10 +235,10 @@ a:hover {
 }
 
 .card-header {
-  background-color: rgba(117, 135, 159,0.3);
+  background-color: rgba($oxno-blue,0.3);
 }
 .card-body  {
-  background-color: rgba(117, 135, 159,0.2);
+  background-color: rgba($oxno-blue,0.2);
 }
 
 /*ALL PAGES*/
@@ -237,7 +251,7 @@ h2{
   /*border: solid;
   border-color: rgb(117, 135, 159);*/
   /*background-color: rgba(255, 255, 255, 0.5);*/
-  background: linear-gradient(45deg,white, 10%, rgba(117, 135, 159,0.3));
+  background: linear-gradient(45deg,white, 10%, rgba($oxno-blue,0.3));
   padding: 8px;
   margin: 10px;
 }
@@ -250,7 +264,7 @@ h2{
 
 .contact-container{
   display: grid ;
-  grid-template-columns: 3 (1fr,2fr,3fr);
+  grid-template-columns: 1fr,2fr,3fr;
   margin: 2vw;
 }
 
@@ -260,7 +274,7 @@ h2{
   /*height: 50%;*/
   border-radius: 5px;
   border: solid;
-  border-color: rgb(117, 135, 159);
+  border-color: $oxno-blue;
   padding: 8px;
   margin: 10px;
   /*background-color: rgba(255, 255, 255, 0.9);*/
