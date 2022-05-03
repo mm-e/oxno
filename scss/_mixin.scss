@@ -1,0 +1,13 @@
+@mixin borders{
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radious: 5px;
+    padding: 8px;
+    margin: 10px; 
+}
+
+@mixin link-style{
+    font-weight: bold;
+    text-decoration: none;
+    font-family: space-mono-bold;
+}
