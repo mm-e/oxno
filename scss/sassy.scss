@@ -253,7 +253,7 @@ a:hover {
 }
 .card-link{
   @include link-style;
-  color: black;
+  color:black;
 }
 .card-body  {
   background-color: rgba(map-get($colores-oxno, oblue),0.2);
