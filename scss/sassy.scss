@@ -175,16 +175,10 @@ h2{
   display: grid ;
   grid-template-columns: 1fr,2fr,3fr;
   margin: 2vw;
+  margin-left: 25vw;
+  margin-right: 25vw;
 }
 
-.contact-form{
-  grid-column: 2;
-  border-radius: 5px;
-  border: solid;
-  border-color: map-get($colores-oxno, oblue);
-  padding: 8px;
-  margin: 10px;
-}
 
 /*PRODUCTOS*/
 
@@ -279,10 +273,10 @@ h5{
 
 
 
-
-
-  .search-bar{
-      display: none;
+  .contact-container{
+    display: grid ;
+    grid-template-columns: 1fr,2fr,3fr;
+    margin: 2vw;
   }
 
   #logo{
